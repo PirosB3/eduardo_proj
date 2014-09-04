@@ -1,0 +1,5 @@
+<h1>All shops</h1>
+<% @shops.each do |shop| %>
+    <%= link_to shop.name, [:admin, shop] %></br>
+<% end %>
+<%= link_to "Create a new shop", new_admin_shop_path %>

@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   post 'login' => 'sessions#create',  :as => :login
 
   namespace :admin do
+      resources :shops
       root :to => 'main#index', :as => :index
   end
   # You can have the root of your site routed with "root"
